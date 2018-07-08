@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>worker's info for company</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="./css/logincss.css" />
+    <link rel="stylesheet" type="text/css" href="./css/hide.css" />
+    <link rel="stylesheet" type="text/css" href="./css/newpage.css" />
+
+    <script src="./js/login.js"></script>
+</head>
+
+<body onload="hide()">
+
+    <div id="pass">
+        <h1>enter your username and password for entering</h1>
+        <form method="POST">
+            username :
+            <input id="input1" name="username" value="" type="text" required="true" />
+            <br> password :
+            <input id="input2" name="password" value="" type="password"  required="true" /> 
+            <br>
+            <input type="submit" value="Log In" onclick="logInFunc(event)" />
+        </form>
+    </div>
+    <div id="newPage">
+
+
+
+        <div class="row" style="min-height:300px;">
+            <div class="col-sm-6">
+                    <img id="logo-main" src="./img/as.jpeg" width="150" height="80">
+                <hr/>
+                <div class="col-xs-3">
+                    <!-- required for floating -->
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs tabs-left">
+                        <li class="active">
+                            <a href="#home" data-toggle="tab">Home</a>
+                        </li>
+                        <li>
+                            <a href="#profile" data-toggle="tab">Profile</a>
+                        </li>
+                        <li>
+                            <a href="#messages" data-toggle="tab">Messages</a>
+                        </li>
+                        <li>
+                            <a href="#settings" data-toggle="tab">Settings</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-9">
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="home">Home Tab.</div>
+                        <div class="tab-pane" id="profile">Profile Tab.</div>
+                        <div class="tab-pane" id="messages">Messages Tab.</div>
+                        <div class="tab-pane" id="settings">Settings Tab.</div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+</body>
+
+</html>
